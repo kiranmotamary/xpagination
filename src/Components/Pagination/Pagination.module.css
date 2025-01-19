@@ -10,8 +10,7 @@ thead{
 }
 .Table{
     width: 99%;
-    /* max-height: 500px;
-    overflow-y: auto; */
+    padding-left: 5px;
 }
 table {
     width: 100%;
@@ -54,6 +53,6 @@ table {
   }
   .tableList{
     width: 100%;
-    padding-left: 25px;
+    /* padding-left: 10px; */
     height: 400px;
   }
