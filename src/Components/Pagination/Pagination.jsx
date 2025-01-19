@@ -39,7 +39,7 @@ const Pagination = ()=>{
                 <table>
                     <thead>
                         <tr>
-                            <th>id</th>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Role</th>
