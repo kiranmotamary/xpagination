@@ -10,7 +10,9 @@ const Pagination = ()=>{
             const jsonData = await response.json();
             setEmployeeData(jsonData);
         }catch(error){
-            console.error("failed to fetch data");
+            console.error("failed to fetch data"+error);
+            alert("failed to fetch data");
+
         }
     }
     useEffect(()=>{
@@ -32,6 +34,7 @@ const Pagination = ()=>{
     return(
         <div className={styles.container}>
             <h1>Employee Data Table</h1>
+        <div className={styles.tableList}>
             <div className={styles.Table}>
                 <table>
                     <thead>
@@ -60,6 +63,7 @@ const Pagination = ()=>{
                 <div className={styles.currentPage}><h5>{currentPage}</h5></div>
                 <button onClick={handleNext} disabled={currentPage>=Math.ceil(employeeData.length/itemsPerPage)}>next</button>
             </div>
+        </div>
         </div>
     )
 }

@@ -7,18 +7,18 @@ thead{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .Table{
     width: 99%;
-    
+    /* max-height: 500px;
+    overflow-y: auto; */
 }
 table {
     width: 100%;
     border-collapse: collapse; /* Ensures no spacing between table cells */
   }
   th,td{
-    padding :20px;
+    padding :10px;
     text-align: left;
   }
   tr{
@@ -52,4 +52,8 @@ table {
     width: 80px;
     border-radius: 5px;
   }
-
+  .tableList{
+    width: 100%;
+    padding-left: 25px;
+    height: 400px;
+  }
